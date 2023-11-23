@@ -1,0 +1,78 @@
+.category h2{
+    text-align: center;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.seasons {
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.seasons h3 {
+    margin: 5px;
+}
+
+.seasons a {
+
+    text-decoration: none;
+    color: var(--text-color);
+    text-align: center;
+    border: 3px solid var(--primary-light);
+    border-radius: 10px;
+    background-color: var(--primary);
+}
+
+.seasons a:hover {
+    color: var(--orange);
+    background-color: var(--primary-light);
+    transition: all 0.1s;
+}
+
+.season {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.season h3 {
+    text-align: center;
+    margin: 0 0 10px 0;
+    color: var(--orange);
+}
+
+.title {
+    margin: 40px 0 20px 0;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+
+    text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .seasons {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-list {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}

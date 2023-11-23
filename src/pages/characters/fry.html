@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futurama | Philip J. Fry</title>
+  <link rel="icon" type="image/png" href="/src/assets/favicon.png" />
+  <link rel="stylesheet" href="/src/css/styles.scss" />
+  <script type="module" src="/src/js/app.js" defer></script>
+</head>
+
+<body>
+  <include src="components/header.html"></include>
+
+  <main>
+    <div class="container">
+
+      <article class="detail">
+        <h1 class="title">Philip J. Fry</h1>
+        <div class="character-info">
+          <div class="card">
+            <section>
+              <h2>Información Básica</h2>
+              <p><strong>Nombre Completo:</strong> Philip J. Fry</p>
+              <p><strong>Edad:</strong> 25 años (al inicio de la serie)</p>
+              <p><strong>Profesión:</strong> Repartidor de Planet Express</p>
+              <p><strong>Planeta Natal:</strong> Tierra</p>
+            </section>
+          </div>
+          <div class="card">
+            <img src="/src/assets/images/characters/fry.png" alt="Philip J. Fry" />
+          </div>
+        </div>
+        <div class="card">
+          <section>
+            <h2>Biografía</h2>
+            <p>Philip J. Fry es un humano que fue congelado criogénicamente el 31 de diciembre de 1999 y despertó mil
+              años
+              después, en el futuro. Trabaja en Planet Express como repartidor y es conocido por sus aventuras y su
+              relación con Turanga Leela.</p>
+          </section>
+
+          <section>
+            <h2>Características Personales</h2>
+            <p>Fry es conocido por su personalidad despreocupada y su buen corazón. A menudo se encuentra en situaciones
+              cómicas y absurdas debido a su falta de conocimiento sobre la tecnología y la cultura del siglo XXXI.</p>
+          </section>
+
+          <section>
+            <h2>Relaciones Familiares y Amistosas</h2>
+            <ul>
+              <li>Turanga Leela (interés amoroso y eventual pareja)</li>
+              <li>Professor Hubert J. Farnsworth (tataratatarabuelo)</li>
+              <li>Bender Bending Rodríguez (mejor amigo)</li>
+              <li>Amy Wong (amiga y compañera de trabajo)</li>
+              <li>Dr. John Zoidberg (amigo y compañero de trabajo)</li>
+            </ul>
+          </section>
+
+        </div>
+
+        <div class="card">
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="carousel-item">
+                <img src="/src/assets/images/characters/gallery/fry-1.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="/src/assets/images/characters/gallery/fry-2.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="/src/assets/images/characters/gallery/fry-3.jpg">
+              </div>
+            </div>
+            <button id="prevButton">‹</button>
+            <button id="nextButton">›</button>
+          </div>
+        </div>
+
+      </article>
+    </div>
+  </main>
+
+  <include src="components/footer.html"></include>
+</body>
+
+</html>

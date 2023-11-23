@@ -1,0 +1,75 @@
+.futurama-theme {
+    margin-bottom: 10px;
+}
+
+iframe {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.futurama-theme h2 {
+    margin: 10px;
+}
+
+.futurama-theme iframe {
+    width: 560px; 
+    height: 315px;
+}
+
+.presentation-info {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.presentation-info h2 {
+    margin: 10px;
+}
+
+.presentation-info a {
+    text-decoration: none;
+    color: #58abd1;
+}
+
+.presentation-info a:hover {
+    text-decoration: underline;
+}
+
+.presentation-info p {
+    margin: 10px;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px
+}
+
+dd {
+    margin-left: 10px;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .presentation-info {
+        flex-direction: column;
+    }
+
+    .videos {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    .futurama-theme iframe, .videos iframe {
+        justify-self: center;
+        width: 100%;
+        min-height: 300px;
+    }
+}

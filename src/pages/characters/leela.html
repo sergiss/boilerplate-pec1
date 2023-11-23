@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futurama | Turanga Leela</title>
+    <link rel="icon" type="image/png" href="/src/assets/favicon.png" />
+    <link rel="stylesheet" href="/src/css/styles.scss" />
+    <script type="module" src="/src/js/app.js" defer></script>
+</head>
+
+<body>
+    <include src="components/header.html"></include>
+
+    <main>
+        <div class="container">
+            
+            <article class="detail">
+                <h1 class="title">Turanga Leela</h1>
+                <div class="character-info">
+                    <div class="card">
+                        <section>
+                            <h2>Información Básica</h2>
+                            <p><strong>Nombre Completo:</strong> Turanga Leela</p>
+                            <p><strong>Edad:</strong> 25 años (al inicio de la serie)</p>
+                            <p><strong>Profesión:</strong> Capitana de la nave de Planet Express</p>
+                            <p><strong>Planeta Natal:</strong> Tierra</p>
+                        </section>
+                    </div>
+
+                    <div class="card">
+                        <img src="/src/assets/images/characters/leela.png" alt="Turanga Leela" />
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <section>
+                        <h2>Biografía</h2>
+                        <p>Turanga Leela es una mujer de apariencia cíclope, originalmente creída como extraterrestre
+                            pero
+                            luego descubierta como mutante de las cloacas de Nueva Nueva York. Es la capitana competente
+                            y
+                            responsable de la nave de Planet Express.</p>
+                    </section>
+
+                    <section>
+                        <h2>Características Personales</h2>
+                        <p>Leela es conocida por su naturaleza decidida, su habilidad para luchar y su liderazgo. A
+                            pesar de
+                            su exterior duro, tiene un lado vulnerable y cuida profundamente a sus amigos y compañeros
+                            de
+                            trabajo.</p>
+                    </section>
+
+                    <section>
+                        <h2>Relaciones Familiares y Amistosas</h2>
+                        <ul>
+                            <li>Philip J. Fry (interés amoroso y eventual pareja)</li>
+                            <li>Professor Hubert J. Farnsworth (empleador)</li>
+                            <li>Bender Bending Rodríguez (amigo y compañero de trabajo)</li>
+                            <li>Amy Wong (amiga y compañera de trabajo)</li>
+                            <li>Dr. John Zoidberg (compañero de trabajo)</li>
+                        </ul>
+                    </section>
+
+                </div>
+
+                <div class="card">
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <div class="carousel-item">
+                                <img src="/src/assets/images/characters/gallery/leela-1.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/src/assets/images/characters/gallery/leela-2.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/src/assets/images/characters/gallery/leela-3.jpg">
+                            </div>
+                        </div>
+                        <button id="prevButton">‹</button>
+                        <button id="nextButton">›</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <include src="components/footer.html"></include>
+</body>
+
+</html>
