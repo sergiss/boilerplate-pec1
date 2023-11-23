@@ -8,7 +8,7 @@
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
     "parcel:dev": "parcel -p 9000 --open",
-    "parcel:build": "parcel build --no-source-maps",
+    "parcel:build": "parcel build --no-source-maps --public-url /boilerplate-pec1/",
     "clean": "rimraf dist .parcel-cache"
   },
   "keywords": [],
