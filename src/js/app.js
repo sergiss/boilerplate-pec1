@@ -4,6 +4,7 @@ import "../css/card.scss";
 import "../css/footer.scss";
 import "../css/detail.scss";
 import "../css/carousel.scss";
+import "../css/index.scss";
 
 /* Menú de navegación */
 const initNavbar = () => {
