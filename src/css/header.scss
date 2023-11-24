@@ -1,0 +1,76 @@
+header {
+    background-color: var(--primary);
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    text-decoration: none;
+    max-height: 100px;
+    margin: 10px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+
+    font-size: 1.2rem;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--yellow);
+}
+
+.nav-link.selected {
+    color: var(--orange);
+}
+
+@keyframes moveRocket {
+    0%, 100% { 
+        left: 0;
+    }
+    50% { 
+        left: calc(100% - 75px);
+    }
+}
+
+@keyframes flipRocket {
+    0% { 
+        transform: scaleX(1);
+    }
+    50% { 
+        transform: scaleX(-1);
+    }
+}
+
+.rocket {
+    position: absolute;
+    width: 75px;
+    bottom: -12px;
+    animation: moveRocket 25s linear infinite, flipRocket 25s steps(1) infinite;
+}
+
+header {
+    position: relative;
+}

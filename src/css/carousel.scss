@@ -31,12 +31,11 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: var(--primary-light);
+    background-color: transparent;
     color: white;
     border: none;
-    border-radius: 20px;
     cursor: pointer;
-    padding: 4px 8px 8px 8px;
+    padding: 0;
     z-index: 2;
     font-size: 2rem;
 }

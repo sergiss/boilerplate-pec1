@@ -8,6 +8,7 @@
     --orange: #f87330;
     --red: #ff0015;
     --yellow: #f8d030;
+    --white: #ffffff;
     --text-color: #e6e6e6;
 }
 
@@ -39,54 +40,6 @@ body {
     margin: 0 auto;
 }
 
-header {
-    background-color: var(--primary);
-}
-
-header .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo a {
-    display: flex;
-    text-decoration: none;
-    max-height: 100px;
-    margin: 10px;
-}
-
-.logo img {
-    max-height: 50px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin: 0 10px;
-
-    font-size: 1.2rem;
-}
-
-nav a {
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: var(--yellow);
-}
-
-.nav-link.selected {
-    color: var(--orange);
-}
-
 main {
     flex: 1;
 }
@@ -95,9 +48,26 @@ main .container {
     padding: 10px;
 }
 
+.links {
+   padding: 10px 20px !important;
+}
+
+.gifs {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+}
+
+.gifs img {
+    flex: 1;
+    height: auto;
+    object-fit: cover;
+}
 
 @media screen and (max-width: 650px) {
     header .container {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 }
