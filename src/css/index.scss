@@ -50,9 +50,26 @@
     }
 }    
 
+.futurama-all {
+    position: relative;
+    overflow: hidden;
+}
+
 .futurama-all img {
+    display: block; 
     width: 100%;
     height: auto;
+}
+
+.dark {
+    filter: brightness(20%); 
+}
+
+.lantern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: circle(15% at 50% 50%);
 }
 
 @media (max-width: 768px) {
@@ -66,3 +83,5 @@
         text-align: center;
     }
 }
+
+

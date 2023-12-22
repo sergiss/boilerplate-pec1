@@ -65,9 +65,3 @@ main .container {
     height: auto;
     object-fit: cover;
 }
-
-@media screen and (max-width: 650px) {
-    header .container {
-        flex-direction: column !important;
-    }
-}

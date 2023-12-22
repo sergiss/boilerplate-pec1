@@ -91,12 +91,69 @@ const initCarousel = () => {
   });
 };
 
+/* Linterna */
+const initLantern = () => {
+  // Selecciona el elemento .futurama-all
+  const futuramaAll = document.querySelector('.futurama-all');
+  if (!futuramaAll) return; // Si no existe, descartamos la función
+  // Inicializa las variables
+  let x = 50;
+  let y = 50;
+  let directionX = 1;
+  let directionY = 1;
+  let focus = false;
+  // Eventos
+  futuramaAll.addEventListener('mousemove', function(e) {
+    const rect = e.target.getBoundingClientRect();
+    x = e.clientX - rect.left; // x position within the element.
+    y = e.clientY - rect.top;  // y position within the element.
+    focus = true;
+  });
+  
+  futuramaAll.addEventListener('mouseleave', function() {
+    focus = false;
+  });
+
+  // Selecciona la imagen
+  const image = document.querySelector('.lantern');
+  const moveLantern = () => { // Función de animación
+    if (!focus) {
+      // Si no hay focus, se mueve rebotando en los bordes
+      if (x < 0) { 
+        x = 0;
+        directionX = -directionX;
+      } else if (x > image.width) {
+        x = image.width;
+        directionX = -directionX;
+      }
+      if (y < 0) {
+        y = 0;
+        directionY = -directionY;
+      } else if (y > image.height) {
+        y = image.height;
+        directionY = -directionY;
+      }
+
+      x += directionX * 2; 
+      y += directionY * 2;
+    }
+
+    // Actualiza el clip-path
+    image.style.clipPath = `circle(15% at ${x}px ${y}px)`;
+   
+    requestAnimationFrame(moveLantern);
+  }
+
+  moveLantern(); // Inicia la animación
+}
+
 const init = () => {
   /* Header */
   initNavbar();
 
   /* Content */
   initCarousel();
+  initLantern();
 
   /* Footer */
   initScrollButton();

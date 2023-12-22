@@ -23,6 +23,22 @@ footer .container {
     font-weight: bold;
 }
 
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-nav img {
+    max-height: 50px;
+}
+
+.footer-nav ul {
+    margin: 15px 0;
+}
+
 #scrollButton {
     position: fixed;
     top: 20px;
@@ -51,4 +67,16 @@ footer .container {
 
 #scrollButton.is-visible {
     display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-nav {
+        flex-direction: column;
+    }
+    .footer-nav ul {
+        margin: 0;
+    }
+    .hide-small {
+        display: none;
+    }
 }
